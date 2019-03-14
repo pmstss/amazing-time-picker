@@ -17,7 +17,7 @@ export class AtpCoreService {
           jDest = 59;
       if (i === nowMinHour) {
         j = nowMinMin;
-      }else if (i === nowMaxHour) {
+      } else if (i === nowMaxHour) {
         jDest = nowMaxMin;
       }
       for (j; j <= jDest; j++) {

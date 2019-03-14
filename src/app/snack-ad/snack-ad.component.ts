@@ -1,12 +1,13 @@
 import { Component, OnInit, HostBinding } from '@angular/core';
-import { of } from 'rxjs';
-import { delay } from 'rxjs/operators';import {
+import {
   state,
   style,
   animate,
   transition,
   trigger
 } from '@angular/animations';
+import { of } from 'rxjs';
+import { delay } from 'rxjs/operators';
 
 interface RenderState {
   duration: number;
@@ -92,30 +93,30 @@ export class SnackAdComponent implements OnInit {
     } else {
       this.stateIndex++;
     }
-    const state = this.states[this.stateIndex];
-    this.renderState(state);
+    const adState = this.states[this.stateIndex];
+    this.renderState(adState);
 
     setTimeout(() => {
       this.viewSlide();
-    }, state.duration + 2000);
+    }, adState.duration + 2000);
   }
 
-  private renderState(state) {
-    this.content = state.content;
+  private renderState(adState) {
+    this.content = adState.content;
 
-    of(state).subscribe(data => {
+    of(adState).subscribe(data => {
       this.visible = false;
       this.content = data.content;
     });
 
-    of(state)
+    of(adState)
       .pipe(delay(300))
       .subscribe(() => {
         this.visible = true;
       });
 
-    of(state)
-      .pipe(delay(state.duration + 600))
+    of(adState)
+      .pipe(delay(adState.duration + 600))
       .subscribe(data => {
         this.visible = false;
       });

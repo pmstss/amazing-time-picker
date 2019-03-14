@@ -118,10 +118,10 @@ export class TimePickerComponent implements OnInit {
         this.time.minute = minute;
         this.rotationClass(degrees);
         this.setActiveTime();
-      }else if (this.clockType === 'hour' && (hour === nowMinHour && minute <= nowMinMin)) {
+      } else if (this.clockType === 'hour' && (hour === nowMinHour && minute <= nowMinMin)) {
         this.time.hour = nowMinHour;
         this.time.minute = nowMinMin;
-      }else if (this.clockType === 'hour' && (hour === nowMaxHour && minute >= nowMaxMin)) {
+      } else if (this.clockType === 'hour' && (hour === nowMaxHour && minute >= nowMaxMin)) {
         this.time.hour = nowMaxHour;
         this.time.minute = nowMaxMin;
       }
@@ -257,7 +257,7 @@ export class TimePickerComponent implements OnInit {
           '-webkit-transition': 'transform ' + this.getAnimationTime(),
           transition: 'transform ' + + this.getAnimationTime()
         };
-    }else {
+    } else {
       arrowStyle = {
         transform: 'rotate(' + this.degree + 'deg)',
         '-webkit-transform': 'rotate(' + this.degree + 'deg)',
