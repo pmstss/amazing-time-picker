@@ -1,6 +1,6 @@
 import { Component, OnInit, HostBinding } from '@angular/core';
-import { Observable } from 'rxjs/Rx';
-import {
+import { of } from 'rxjs';
+import { delay } from 'rxjs/operators';import {
   state,
   style,
   animate,
@@ -103,19 +103,19 @@ export class SnackAdComponent implements OnInit {
   private renderState(state) {
     this.content = state.content;
 
-    Observable.of(state).subscribe(data => {
+    of(state).subscribe(data => {
       this.visible = false;
       this.content = data.content;
     });
 
-    Observable.of(state)
-      .delay(300)
+    of(state)
+      .pipe(delay(300))
       .subscribe(() => {
         this.visible = true;
       });
 
-    Observable.of(state)
-      .delay(state.duration + 600)
+    of(state)
+      .pipe(delay(state.duration + 600))
       .subscribe(data => {
         this.visible = false;
       });
