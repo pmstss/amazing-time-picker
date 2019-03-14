@@ -66,7 +66,7 @@
     "serve": "^10.1.2",
     "ts-node": "^8.0.3",
     "tsickle": "^0.34.3",
-    "tslib": "^1.9.0",
+    "tslib": "^1.9.3",
     "tslint": "^5.14.0",
     "typescript": "3.2.2",
     "zone.js": "^0.8.29"
@@ -74,5 +74,17 @@
   "peerDependencies": {
     "@angular/common": "^7.2.9",
     "@angular/core": "^7.2.9"
-  }
+  },
+  "files": [
+    "npm_dist/**/*"
+  ],
+  "main": "npm_dist/bundles/amazing-time-picker.umd.js",
+  "module": "npm_dist/fesm5/amazing-time-picker.js",
+  "es2015": "npm_dist/fesm2015/amazing-time-picker.js",
+  "esm5": "npm_dist/esm5/amazing-time-picker.js",
+  "esm2015": "npm_dist/esm2015/amazing-time-picker.js",
+  "fesm5": "npm_dist/fesm5/amazing-time-picker.js",
+  "fesm2015": "npm_dist/fesm2015/amazing-time-picker.js",
+  "typings": "npm_dist/amazing-time-picker.d.ts",
+  "metadata": "npm_dist/amazing-time-picker.metadata.json"
 }
