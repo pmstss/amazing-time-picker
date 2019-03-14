@@ -3,5 +3,8 @@
   "dest": "npm_dist",
   "lib": {
     "entryFile": "public_api.ts"
-  }
+  },
+  "whitelistedNonPeerDependencies": [
+    "intl"
+  ]
 }
