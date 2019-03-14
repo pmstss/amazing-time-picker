@@ -1,0 +1,7 @@
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+export { AmazingTimePickerModule } from './src/app/atp-library/atp-time-picker.module';
+export { AmazingTimePickerService } from './src/app/atp-library/atp-time-picker.service';
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicHVibGljX2FwaS5qcyIsInNvdXJjZVJvb3QiOiJuZzovL2FtYXppbmctdGltZS1waWNrZXIvIiwic291cmNlcyI6WyJwdWJsaWNfYXBpLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7QUFBQSx3Q0FBYyw4Q0FBOEMsQ0FBQztBQUM3RCx5Q0FBYywrQ0FBK0MsQ0FBQyIsInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCAqIGZyb20gJy4vc3JjL2FwcC9hdHAtbGlicmFyeS9hdHAtdGltZS1waWNrZXIubW9kdWxlJztcclxuZXhwb3J0ICogZnJvbSAnLi9zcmMvYXBwL2F0cC1saWJyYXJ5L2F0cC10aW1lLXBpY2tlci5zZXJ2aWNlJztcclxuIl19
