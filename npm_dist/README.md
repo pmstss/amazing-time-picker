@@ -1,4 +1,4 @@
-# Fork with up-to-date dependencies (angular and packagr), configs and minimized bundle size (few tens of KB instead of almost MB)
+## Fork with up-to-date dependencies (angular and packagr), proper dev/peer/main dependencies configs that result in minimized bundle size (tens of KB instead of almost MB)
 
 # Amazing Time Picker (Clock) ![Build Status](https://travis-ci.org/owsolutions/amazing-time-picker.svg?branch=master) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 

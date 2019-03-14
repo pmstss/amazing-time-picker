@@ -1,4 +1,4 @@
-import { Observable } from "rxjs";
+import { Observable } from 'rxjs';
 /**
  * AmazingTimePicker configuration
  * when calling open() function from 'AmazingTimePickerService' passed as parameter

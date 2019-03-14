@@ -44,7 +44,7 @@
     "serve": "^10.1.2",
     "ts-node": "^8.0.3",
     "tsickle": "^0.34.3",
-    "tslib": "^1.9.0",
+    "tslib": "^1.9.3",
     "tslint": "^5.14.0",
     "typescript": "3.2.2",
     "zone.js": "^0.8.29"
@@ -53,6 +53,9 @@
     "@angular/common": "^7.2.9",
     "@angular/core": "^7.2.9"
   },
+  "files": [
+    "npm_dist/**/*"
+  ],
   "main": "bundles/amazing-time-picker.umd.js",
   "module": "fesm5/amazing-time-picker.js",
   "es2015": "fesm2015/amazing-time-picker.js",
